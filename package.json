@@ -13,7 +13,7 @@
         "app"
     ],
     "bin": {
-        "oc-creator": "app/index.js"
+        "coyote": "app/index.js"
     },
     "dependencies": {
         "cli-color": "^1.4.0",
