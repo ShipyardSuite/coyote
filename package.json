@@ -1,0 +1,25 @@
+{
+    "name": "coyote-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jasmine"
+    },
+    "keywords": [],
+    "author": "",
+    "preferGlobal": true,
+    "files": [
+        "app"
+    ],
+    "bin": {
+        "oc-creator": "app/index.js"
+    },
+    "dependencies": {
+        "cli-color": "^1.4.0",
+        "commander": "^2.20.0",
+        "fs-extra": "^8.0.1",
+        "js-yaml": "^3.13.1",
+        "tabletops": "^0.1.2"
+    }
+}
