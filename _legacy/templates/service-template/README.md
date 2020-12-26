@@ -1,0 +1,1 @@
+# opuscapita-service-template

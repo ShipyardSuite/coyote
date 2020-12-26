@@ -1,0 +1,8 @@
+version: '{{version}}'
+services:
+  {{name}}:
+    build: {{build-path}}
+    ports:
+      - "{{port-original}}:{{port-tunnel}}"
+    volumes:
+      - {{volume}}

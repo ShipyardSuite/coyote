@@ -5,10 +5,6 @@ A simple, extendable template based project generator cli.
 
 ## Quickstart
 
-to create a new project, simply type ```coyote create test``` in a diretory of your choice.
-
-## Example commands
-
 **minimal example command:**
 
 ```coyote new test``` Creates a project called test using the TypeScript Demo template.
@@ -38,6 +34,8 @@ Create a new project with the ```new``` command followed by these options:
 | `-r`    | `--run`         | string | Script from package.json to be run after project creation.     |                           |
 
 ## Template creation
+
+to create a new template, simply type ```coyote create test``` in a diretory of your choice.
 
 ### List all templates
 

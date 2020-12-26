@@ -1,0 +1,17 @@
+# author: "OpusCapita"
+# version: 0.1
+
+# .env
+.env:
+  host: localhost
+  port: 3000
+
+# .gitignore
+.gitignore:
+  ignore:
+    - node_modules
+    - "*.log"
+    - .nyc_output
+    - test-results.xml
+    - coverage
+

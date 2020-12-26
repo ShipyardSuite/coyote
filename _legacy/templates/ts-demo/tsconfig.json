@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "lib": ["es6","dom"],
+        "jsx": "react",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "{{output-directory}}",
+        "rootDir": "{{input-directory}}",
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "preserveConstEnums": true
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

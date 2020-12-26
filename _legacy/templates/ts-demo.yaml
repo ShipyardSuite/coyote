@@ -1,0 +1,56 @@
+# author: OpusCapita
+# version: 0.1
+
+# .gitignore
+.gitignore:
+  ignore:
+    - node_modules
+    - .DS_Store
+    - .idea
+
+# .dockerignore
+.dockerignore:
+  ignore:
+    - node_modules
+    - .DS_Store
+
+# .env
+.env:
+  host: localhost
+  port: 3000
+
+# Dockerfile 
+Dockerfile:
+  node-version: node:8-alpine
+  work-dir: /home/node/user
+  package-copy-target: ./
+  exposed-port: 50000
+  copy-target: .
+  run-command: npm install && npm cache clean --force
+  start-command: 
+    - npm
+    - start
+
+# docker-compose.yaml
+"docker-compose.yaml":
+  "version": 3
+  "build-path": .
+  "port-original": 5000
+  "port-tunnel": 5000
+  "volume": .:/code
+
+# tsconfig.json
+"tsconfig.json":
+  "input-directory": './src'
+  "output-directory": './dist'
+
+# webpack.config.js
+"webpack.config.js":
+  "entry-path": ./src/App.ts
+  "dev-tool": inline-source-map
+  "extensions":
+    - .ts
+    - tsx
+    - .js
+    - .jsx
+    - json
